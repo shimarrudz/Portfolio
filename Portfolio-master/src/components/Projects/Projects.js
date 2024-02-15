@@ -7,7 +7,7 @@ import skinDesease from "../../Assets/Projects/Skin-Desease-Finder-Project.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import psycheck from "../../Assets/Projects/psycheck.png";
 
 function Projects() {
   return (
@@ -34,7 +34,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={psycheck}
               isBlog={false}
               title="PsyCheck"
               description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
