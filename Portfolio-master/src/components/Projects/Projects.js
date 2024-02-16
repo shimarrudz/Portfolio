@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import skinDesease from "../../Assets/Projects/Skin-Desease-Finder-Project.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import psycheck from "../../Assets/Projects/psycheck.png";
+import cleanode from "../../Assets/Projects/clean-node-vss.png";
+import brainDesease from "../../Assets/Projects/Skin-Desease-Finder-Project.png";
+import hitchhike from "../../Assets/Projects/hitchhike-vss.png";
+import uinvest from "../../Assets/Projects/u-invest-vss.jpeg";
+import authentication from "../../Assets/Projects/authentication-vss.png";
+import psycheck from "../../Assets/Projects/psycheck-vsss.png";
 
 function Projects() {
   return (
@@ -21,14 +21,24 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={hitchhike}
+              isBlog={false}
+              title="HitchHike"
+              description="Crowned as the most innovative idea, a Web App for carpooling was developed, in partnership with Stellantis. A Fullstack platform was developed, utilizing JavaScript, HTML CSS, Java, and Oracle as the database."
+              ghLink="https://github.com/Smart-Mobility-Technology-Solutions"   
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={uinvest}
               isBlog={false}
               title="U Invest"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              description="Web App to demystify IPOs, developed in partnership with B3. A chatbot was created using Python with Flask, Java as the backend, and React, with Oracle serving as the database."
+              ghLink="https://github.com/Challenge-B3"
             />
           </Col>
 
@@ -37,54 +47,38 @@ function Projects() {
               imgPath={psycheck}
               isBlog={false}
               title="PsyCheck"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              description="Mental health app, in partnership with Notredame Intermédica, aimed at facilitating the relationship between the doctor and the patient. Developed with React Native, Java, Azure and Oracle as database"
+              ghLink="https://github.com/gs-notridame"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="HitchHike"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
+              imgPath={cleanode}
               isBlog={false}
               title="Clean Node API"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              description="The goal is to demonstrate how to create an API with a well-defined and decoupled architecture, using TDD (Test-Driven Development) as a working methodology, Clean Architecture to distribute responsibilities across layers, always adhering to SOLID principles, and applying Design Patterns whenever possible to solve common problems."
+              ghLink="https://github.com/shimarrudz/CleanNodeAPI"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={authentication}
               isBlog={false}
               title="Authentication JWT"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              description=  "This is an authentication system developed in Node.js using the Nest.js framework. It provides basic authentication features such as account creation, login, token generation, and token renewal."
+              ghLink="https://github.com/shimarrudz/AuthenticationSystem"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={skinDesease}
+              imgPath={brainDesease}
               isBlog={false}
-              title="Skin Desease Finder AI"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              title="Brain Desease Finder AI"
+              description="AI trained with Roboflow (a tool that trains through images) aimed at identifying brain diseases through imaging analysis."
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
         </Row>
